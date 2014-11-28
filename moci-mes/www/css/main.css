@@ -1,0 +1,449 @@
+.logo:hover {
+    cursor: pointer;
+}
+
+.header span:hover{
+    cursor: pointer;
+}
+.content{
+	margin: 0 auto;
+	width: 100%;
+    min-height: 940px;
+	position: relative;
+	overflow: hidden;
+}
+/** Begin of left panel **/
+.leftPanel{
+	background-color: #464650;
+	color: #fff;
+	width: 350px;
+	padding: 20px 0 260px;
+	font-size: 16px;
+	min-height: 940px;
+	height:auto !important;
+	height: 100%;
+}
+.domainNameBox{
+	position: relative;
+	padding: 0 15px;
+	width: 100%;
+}
+.domainName span{
+	font-size: 26px;
+	font-weight: bold;
+	margin-right: 10px;
+	vertical-align: middle;
+	display: inline-block;
+	width: 88%;
+}
+.domainName a img{
+    width: 18px;
+}
+.domainName-selector{
+	display: none;
+	background-color: #FFF;
+	color: #000;
+	border-radius: 3px;
+	padding: 4px;
+	position: absolute;
+	z-index: 10;
+	width: 93%;
+}
+.domainName-selector li a{
+	display: block;
+	padding: 4px 23px;
+	color: #000;
+}
+.domainName-selector li a:hover{
+	background-color: #F5F5F5;
+}
+.searchBox{
+    position: relative;
+    height: 45px;
+	padding: 12px 15px 3px;
+    opacity: 0.5;
+}
+.searchBox a{
+    position: absolute;
+    height: 30px;
+    width: 10%;
+	display: block;
+	padding: 2px;
+    border-bottom-left-radius: 14px;
+    border-top-left-radius: 14px;
+	background-color: #EEE;
+	background-image: url('/img/search.png');
+	background-repeat: no-repeat;
+	background-position: 6px 6px;
+	color: #000;
+}
+.searchBox input{
+    position: absolute;
+    width: 81%;
+    left: 14%;
+    height: 30px;
+	border: none;
+	outline: none;
+	line-height: 22px;
+	background-color: #eee;
+	color: #333;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.searchBox a:hover input{
+	color: #333;
+}
+.searchBox a:focus input{
+	color: #333;
+}
+
+.mockList{
+	padding: 10px 15px;
+	font-weight: bold;
+}
+.mockList span{
+	display: inline-block;
+	width: 60%;
+}
+.mockList .createResourceBtn{
+	background-color: #464650;
+    padding: 4px 15px;
+	border-radius: 16px;
+	color: #FFF;
+    border: 1px solid #FFF;
+}
+
+.mockList .createResourceBtn:hover{
+	background-color: #FFF;
+    color: #464650;
+    cursor: pointer;
+}
+.resourceNameBox{
+	margin: 0 0px;
+	position: relative;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	padding: 8px 15px;
+}
+.resourceNameBox:hover{
+    cursor: pointer;
+}
+.resourceNameBox.collapse{
+	border-bottom: 1px solid #AAA;
+	display: block;
+}
+.resourceNameBox .resourceName{
+	display: inline-block;
+	width: 90%
+}
+.resourceNameBox .icon{
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 19px;
+	cursor: pointer;
+}
+.resourceNameBox .upIcon{
+	background-image: url('/img/atop.png');
+	background-repeat: no-repeat;
+	height: 11px;
+	top: 10px;
+	right: 15px;
+}
+.resourceNameBox .downIcon{
+	background-image: url('/img/abottom.png');
+	background-repeat: no-repeat;
+	height: 12px;
+	top: 10px;
+	right: 15px;
+}
+.mockItemList{
+	padding: 0px 0px 0px;
+}
+.mockItemList li {
+	position: relative;
+	color: #FFF;
+	cursor: default;
+	padding: 8px 15px;
+}
+
+.mockItemList li:hover{
+    background-color: #9A9A9F;
+}
+
+.mockItemList .selected{
+	color: #464650;
+    background-color: #FFF;
+}
+
+.mockItemList.active{
+	background-position: 0 -19;
+}
+.mockItemList .state {
+    position: absolute;
+    display: inline-block;
+    background-image: url('/img/radioBtn.png');
+    background-repeat: no-repeat;
+    margin: 10 5px;
+    padding-left: 24px;
+    padding-bottom: 5px;
+    line-height: 19px;
+    height: 20px;
+    top: 7px;
+    cursor: pointer;
+    zoom: 1;
+}
+
+.mockItemList .inactive{
+	background-position: 0 -39px;
+}
+
+.mockItemList .itemName{
+	display: inline-block;
+	/*background-image: url('/img/radioBtn.png');
+	background-repeat: no-repeat;*/
+	margin: 0 5px;
+	padding-left: 24px;
+	line-height: 19px;
+	height: 20px;
+	cursor: pointer;
+	zoom: 1;
+}
+.mockItemList  .itemSelected{
+	background-image: url('/img/radioBtn-selected.png')!important;
+}
+
+.mockItemList .itemIcon{
+	display: inline-block;
+	height: 19px;
+	position: absolute;
+	cursor: pointer;
+}
+.mockItemList .edit{
+	width: 20px;
+	background-image: url('/img/edit.png');
+	background-repeat: no-repeat;
+	top: 10px;
+	right: 44px;
+}
+.mockItemList .editSelected{
+	background-image: url('/img/edit-selected.png')!important;
+}
+.mockItemList .delete{
+	width: 20px;
+	background-image: url('/img/delete.png');
+	background-repeat: no-repeat;
+	top: 10px;
+	right: 15px;
+}
+.mockItemList .deleteSelected{
+	background-image: url('/img/delete-selected.png')!important;
+}
+/** End of left panel **/
+
+/** Begin of right panel **/
+.rightPanel{
+	background-color: #FFF;
+	left: 350px;
+	position: absolute;
+	right: 0;
+	height: 100%;
+	font-size: 16px;
+	color: #FFF;
+}
+.domainItemDesc{
+	margin: 25px 35px 15px;
+    color: #9A9DA2;
+}
+.subTitle{
+	padding: 0 35px;
+    color: #282b38;
+    font-weight: bolder;
+}
+
+.help {
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.editor{
+	width: 95%;
+	min-height: 580px;
+	height: auto ;
+	height: 580px;
+	margin: 0 35px;
+	color: #000;
+    outline-color: #FFF;
+}
+
+.errMsg{
+	margin: 10px 45px 10px;
+	background-color: #EF4D5A;
+	padding: 11px 44px;
+	background-image: url('/img/warning.png');
+	background-repeat: no-repeat;
+	border-radius: 12px;
+	background-position: 12px 15px;
+}
+
+.sucMsg {
+    margin: 10px 45px 10px;
+}
+.btnGroup{
+	margin: 10px 22px;
+}
+.btnGroup .actionBtn{
+	padding: 5px 16px;
+	border-radius: 16px;
+	float: right;
+	margin-left: 15px;
+    margin-right: 15px;
+	cursor: pointer;
+	color: #FFF;
+}
+.btnGroup .active,.btnGroup .add,.btnGroup .save, .btnGroup .reset{
+	border: 1px solid #282b38;
+	background-color: #FFF;
+	box-shadow: none;
+    color: #282b38;
+    font-weight: bolder;
+}
+.btnGroup .active:hover, .btnGroup .add:hover, .btnGroup .save:hover, .btnGroup .reset{
+	background-color: #282b38;
+    color: #F1F1F1;
+}
+
+.btnGroup .disabled{
+    background-color: #CCC;
+    color: #FFF;
+    border-color: #CCC;
+}
+.btnGroup .reset{
+    border: 1px solid #282b38;
+    background-color: #FFF;
+    box-shadow: none;
+    color: #282b38;
+    font-weight: bolder;
+}
+.btnGroup .reset:hover{
+    background-color: #282b38;
+    color: #F1F1F1;
+}
+/** End of right panel **/
+
+/** Begin of common setting **/
+.light-green {
+	color:#12A89F;
+}
+/** End of common setting **/
+
+/** Begin of Popup **/
+.modal-title {
+	font-size: 25px;
+	color:#282b38;
+}
+.modal-header button{
+	font-size: 30px;
+	color:#282b38;
+}
+
+.modal label {
+	color: #CCC;
+	font-weight:lighter;
+}
+
+.btn-right {
+	background-color: #282b38;
+	padding: 1px 20px;
+	border-radius: 16px;
+	float:left;
+	margin-left:190px;
+    color: #FFF;
+    border: 1px solid #282b38;
+}
+.btn-right:hover {
+	background-color: #464650;
+    border: 1px solid #464650;
+    color: #FFF;
+}
+.btn-left {
+	background-color: #FFF;
+	padding: 1px 15px;
+	border-radius: 16px;
+	float:right;
+	margin-right:190px;
+	color: #282b38;
+    border: 1px solid #282b38;
+}
+.btn-left:hover {
+    background-color: #464650;
+    color: #FFF;
+}
+
+.btn-left.disabled, .btn-right.disabled{
+    background-color: #CCC;
+    color: #FFF;
+    border-color: #CCC;
+}
+
+.popup-dropdown {
+	position: relative;
+}
+.popup-dropdown .downIcon{
+	display: inline-block;
+	position: absolute;
+	width: 26px;
+	cursor: pointer;
+	background-image: url('/img/abottom.png');
+	background-repeat: no-repeat;
+	height: 15px;
+	top: 13px;
+	right: 5px;
+}
+
+.resourceName-selector{
+	display: none;
+	background-color: #FFF;
+	color: #000;
+	border-radius: 3px;
+	padding: 4px;
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	border: 1px solid #282b38;
+}
+.resourceName-selector li a{
+	display: block;
+	padding: 4px 23px;
+	color: #000;
+}
+.resourceName-selector li a:hover{
+	background-color: #F5F5F5;
+}
+
+textarea {
+    resize: none;
+}
+/** End of Popup **/
+
+/** Begin of custom bootstrap style **/
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 600px;
+        margin: 200px auto;
+    }
+}
+/** End of custom bootstrap style **/
+
+/** Begin of customize placeholder **/
+.modal label{
+    color: #666;
+}
+.form-control:-moz-placeholder, .form-control::-moz-placeholder{ color: #CCC; }
+.form-control::-webkit-input-placeholder{ color:#CCC }
+.form-control:-ms-input-placeholder{ color:#CCC }
+.btn:focus, .btn:active:focus, .btn.active:focus{
+    outline: none;
+}
+/** End of customize placeholder **/

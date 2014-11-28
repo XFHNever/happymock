@@ -1,5 +1,8 @@
 target/
-db/
-.idea/
+<<<<<<< HEAD
+ *.releaseBackup
 *.iml
-test.*
+mockFile
+.idea/
+=======
+>>>>>>> 6cddeb200fb6eb677ee404a44dbb501198b7f036
