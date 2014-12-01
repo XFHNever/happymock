@@ -1,8 +1,10 @@
 happy mock release&backlog
 ===========================
 todo:
+- redefine the happy mock DSL ,support more expression and leverage freemarker
 - docker integration
 - support regex in request
+
 
 
 done

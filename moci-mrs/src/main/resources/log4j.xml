@@ -38,13 +38,9 @@
 	<logger name="org.springframework.web">
 		<level value="info" />
 	</logger>
-	
-	
-	<logger name="com.ebay.skunks.hmhw">
-		<level value="DEBUG" />
-	</logger>
 
-    <logger name="com.ebay.happymock">
+
+    <logger name="com.jcworks.happymock">
         <level value="INFO" />
     </logger>
 

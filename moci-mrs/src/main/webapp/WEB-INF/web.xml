@@ -7,7 +7,7 @@
 
     <servlet>
         <servlet-name>happymock</servlet-name>
-        <servlet-class>com.ebay.happymock.middleware.http.HappyMockServlet</servlet-class>
+        <servlet-class>com.jcworks.happymock.middleware.http.HappyMockServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
