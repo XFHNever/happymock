@@ -364,3 +364,10 @@ Throughput 455.8/s
 Criteria:2000 T/s
 90% line 2703
 Throughput 374.1/s
+
+##Start scripts
+
+$ java -jar happy_mock_happy_work-1.0-SNAPSHOT.jar start -p 8090 -f c:/opt/moci
+.dsl -t DEBUG
+
+
