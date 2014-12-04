@@ -22,10 +22,10 @@ public class JCommandTest {
         Assert.assertEquals(happyMockCommand.commandStart.track,"DEBUG");
     }
 
-    @Test(enabled =true)
+    @Test(enabled =false)
     void test_start_parse_(){
         HappyMockCommand happyMockCommand=new HappyMockCommand();
-        happyMockCommand.parse("start", "-p", "8888","--key", "mockany", "-t", "DEBUG");
+        happyMockCommand.parse("start", "-p", "8888","--key", "mockany", "-f", "c:/opt/moci1.dsl");
         happyMockCommand.run();
         Assert.assertNotNull(happyMockCommand.commandStart);
         Assert.assertEquals(happyMockCommand.commandStart.port,8888);

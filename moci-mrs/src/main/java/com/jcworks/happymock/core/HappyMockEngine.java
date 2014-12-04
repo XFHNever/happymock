@@ -105,8 +105,6 @@ public class HappyMockEngine {
             LOG.debug("find no matched DLS,return http code 404");
             response.setCode(404);//does not find matched settings
         }
-        //set keep alive no matter we find mock specs or not
-        response.setKeepAlive(request.isKeepAlive());
         return response;
     }
 

@@ -44,8 +44,11 @@ public class MRSServerHandler extends SimpleChannelInboundHandler<Request> {
         if (request.getUrl().startsWith(COMPILE_CONTEXT)) {
             LOG.debug("Start compile request");
             response =mrsRunner().getHappyMockEngine().compile(request.getText());
+
             LOG.debug("End compile request");
         }
+        //set keep alive no matter we find mock specs or not
+        response.setKeepAlive(request.isKeepAlive());
         //close if the connection=close
         ChannelFuture future = ctx.writeAndFlush(response);
         if (!request.isKeepAlive()) {

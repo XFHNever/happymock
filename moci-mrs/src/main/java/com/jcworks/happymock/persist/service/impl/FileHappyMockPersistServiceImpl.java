@@ -1,10 +1,14 @@
 package com.jcworks.happymock.persist.service.impl;
+import com.google.common.base.Preconditions;
+import com.google.common.io.Files;
 import com.jcworks.happymock.persist.model.MockItem;
 import com.jcworks.happymock.persist.service.HappyMockPersistService;
 import com.google.common.collect.Lists;
 
 import java.io.*;
 import java.util.List;
+
+import static com.google.common.base.Preconditions.checkState;
 
 /**
  * User: jicui
@@ -14,6 +18,7 @@ public class FileHappyMockPersistServiceImpl implements HappyMockPersistService 
      private File dslFile;
 
     public FileHappyMockPersistServiceImpl(File dslFile) {
+        checkState(dslFile.exists(),"Local DSL file does not exist");
         this.dslFile = dslFile;
     }
 
