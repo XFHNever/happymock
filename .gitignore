@@ -1,8 +1,7 @@
 target/
-<<<<<<< HEAD
- *.releaseBackup
+*.releaseBackup
 *.iml
 mockFile
 .idea/
-=======
->>>>>>> 6cddeb200fb6eb677ee404a44dbb501198b7f036
+.gradle/
+build/
