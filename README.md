@@ -1,6 +1,3 @@
-Happy Mock Happy Work
-=====================
-
 Background
 ----
 
